@@ -10,6 +10,16 @@ If the array is empty then it should return an empty array.
 
 function filterDivisible(numbers, divisor) {
 
+    let result = [];
+
+    for (const number of numbers) {
+        if(number % divisor === 0) {
+            result.push(number);         
+        } else (number === 0) {
+            return null;
+        }
+    return result;
+    }
 }
 
 module.exports = filterDivisible;
