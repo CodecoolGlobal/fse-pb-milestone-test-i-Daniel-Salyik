@@ -15,11 +15,13 @@ function filterDivisible(numbers, divisor) {
     for (const number of numbers) {
         if(number % divisor === 0) {
             result.push(number);         
-        } else (number === 0) {
+        }
+        if (number === 0) {
             return null;
         }
-    return result;
     }
+
+    return result;
 }
 
 module.exports = filterDivisible;
