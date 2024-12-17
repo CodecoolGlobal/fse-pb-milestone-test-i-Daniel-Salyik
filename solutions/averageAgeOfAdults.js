@@ -22,7 +22,7 @@ function averageAgeOfAdults(users) {
   for (let i = 0; i < users.length; i++) {
     const element = users[i].age;
       if (users[i].age >= 18) {
-        averageAge.push(users[i].age)
+        age.push(users[i].age)
       }
   }
   let ageSum = 0;
